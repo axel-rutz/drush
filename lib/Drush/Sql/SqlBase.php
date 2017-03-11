@@ -42,7 +42,7 @@ class SqlBase {
    *
    * @param bool $hide_password
    *  If TRUE, DBMS should try to hide password from process list.
-   *  On mysql, that means using --defaults-extra-file to supply the user+password.
+   *  On mysql, that means using --defaults-file to supply the user+password.
    *
    * @return string
    */
@@ -291,7 +291,7 @@ class SqlBase {
    *
    * @param bool $hide_password
    *  If TRUE, DBMS should try to hide password from process list.
-   *  On mysql, that means using --defaults-extra-file to supply the user+password.
+   *  On mysql, that means using --defaults-file to supply the user+password.
    * @return string
    */
   public function creds($hide_password = TRUE) {}
